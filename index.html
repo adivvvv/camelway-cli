@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamelWay B2B Data Terminal | CLI Explorer</title>
+    
+    <meta name="description" content="Official CamelWay Command Line Interface for B2B partners. Access real-time European camel milk logistics, pricing, and clinical research data.">
+    <meta name="author" content="Adrian Wadowski">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body { background-color: #0f172a; font-family: 'Inter', sans-serif; }
+        .terminal-box { background: #020617; border: 1px solid #334155; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .terminal-header { background: #1e293b; padding: 0.5rem 1rem; display: flex; gap: 0.5rem; align-items: center; border-bottom: 1px solid #334155; }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red { background: #ef4444; }
+        .dot-yellow { background: #eab308; }
+        .dot-green { background: #22c55e; }
+    </style>
+</head>
+<body class="text-slate-300 antialiased selection:bg-amber-500 selection:text-white">
+
+    <div class="max-w-5xl mx-auto px-6 py-16">
+        
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black tracking-tighter uppercase text-white mb-4">
+                CamelWay <span class="text-amber-500">B2B Terminal</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                The official Command Line Interface (CLI) for wholesale partners, developers, and researchers. Connect directly to the <a href="https://api.camelway.eu" target="_blank" class="text-amber-500 hover:underline">CamelWay API</a>.
+            </p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-amber-500/50 transition">
+                <i class="fa-solid fa-industry text-amber-500 text-3xl mb-4"></i>
+                <h3 class="text-white font-bold mb-2">B2B Integration</h3>
+                <p class="text-sm text-slate-400">Instantly fetch real-time wholesale pricing, volume discounts, and available stock directly from your terminal.</p>
+            </div>
+            <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-amber-500/50 transition">
+                <i class="fa-solid fa-truck-fast text-amber-500 text-3xl mb-4"></i>
+                <h3 class="text-white font-bold mb-2">EU Logistics</h3>
+                <p class="text-sm text-slate-400">Check current DHL/FedEx shipping rates, free delivery thresholds, and transit times for 36 European markets.</p>
+            </div>
+            <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700/50 hover:border-amber-500/50 transition">
+                <i class="fa-solid fa-flask text-amber-500 text-3xl mb-4"></i>
+                <h3 class="text-white font-bold mb-2">Clinical Data Hub</h3>
+                <p class="text-sm text-slate-400">Access DOIs and direct links to our peer-reviewed research on gastrointestinal pathology and functional dairy.</p>
+            </div>
+        </div>
+
+        <div class="mb-20">
+            <h2 class="text-2xl font-bold text-white mb-6 border-l-4 border-amber-500 pl-4">Quick Start Guide</h2>
+            <div class="terminal-box">
+                <div class="terminal-header">
+                    <div class="dot dot-red"></div>
+                    <div class="dot dot-yellow"></div>
+                    <div class="dot dot-green"></div>
+                    <span class="ml-4 text-xs text-slate-400 font-mono">bash - Docker</span>
+                </div>
+                <div class="p-6 font-mono text-sm">
+                    <p class="text-slate-500 mb-2"># 1. Ensure you have Docker installed on your system.</p>
+                    <p class="text-slate-500 mb-4"># 2. Run the CamelWay Terminal image directly from Docker Hub:</p>
+                    <p class="text-emerald-400 mb-6">$ docker run --rm camelwayeurope/b2b-terminal</p>
+                    
+                    <p class="text-amber-500">Output preview:</p>
+                    <p class="text-white">🐫 CamelWay B2B Data Terminal v1.0</p>
+                    <p class="text-blue-400">Translating Ancient Milk into Modern Clinical Science</p>
+                    <p class="text-slate-500">------------------------------------------------------------</p>
+                    <p><span class="text-green-400">Quality:</span> High quality, low-temperature spray dried (LTSD). A2-only.</p>
+                    <p><span class="text-green-400">Shelf-Life:</span> 15-18 months (Ideal for manufacturing flexibility).</p>
+                    <p class="text-slate-500">------------------------------------------------------------</p>
+                </div>
+            </div>
+            
+            <div class="mt-6 flex gap-4">
+                <a href="https://hub.docker.com/r/camelwayeurope/b2b-terminal" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded text-sm font-bold transition flex items-center gap-2">
+                    <i class="fa-brands fa-docker text-lg"></i> View on Docker Hub
+                </a>
+                <a href="https://github.com/adivvvv/camelway-cli" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-white border border-slate-600 px-6 py-3 rounded text-sm font-bold transition flex items-center gap-2">
+                    <i class="fa-brands fa-github text-lg"></i> Source Code
+                </a>
+            </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-16">
+            <h2 class="text-2xl font-bold text-white mb-8 text-center italic tracking-tight">Translating Ancient Milk into Modern Clinical Science</h2>
+            
+            <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                <div>
+                    <h4 class="text-amber-500 font-bold uppercase tracking-widest text-xs mb-4">Official Infrastructure</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://camelway.eu" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-globe text-slate-500"></i> CamelWay Europe (B2C)</a></li>
+                        <li><a href="https://camelmilkwholesale.com" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-boxes-stacked text-slate-500"></i> Camel Milk Wholesale (B2B)</a></li>
+                        <li><a href="https://api.camelway.eu" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-code text-slate-500"></i> Developer API Gateway</a></li>
+                        <li><a href="https://camelway-hub.vercel.app/" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-server text-slate-500"></i> Vercel Data Hub</a></li>
+                        <li><a href="https://camelway.pages.dev/" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-cloud text-slate-500"></i> Cloudflare Edge Portal</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-amber-500 font-bold uppercase tracking-widest text-xs mb-4">Clinical Research & Datasets</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="https://doi.org/10.7910/DVN/TYP1LC" target="_blank" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-book-medical text-slate-500"></i> Harvard Dataverse Dataset</a></li>
+                        <li><a href="https://zenodo.org/records/18792722" target="_blank" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-microscope text-slate-500"></i> Zenodo Archive</a></li>
+                        <li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6308839" target="_blank" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-file-medical text-slate-500"></i> SSRN Publications</a></li>
+                        <li><a href="https://osf.io/xmzrd/" target="_blank" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-database text-slate-500"></i> OSF Framework Repository</a></li>
+                        <li><a href="https://www.kaggle.com/datasets/adrianwadowski/camel-milk-in-gastrointestinal-therapy" target="_blank" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-chart-pie text-slate-500"></i> Kaggle Clinical Models</a></li>
+                        <li><a href="https://philpapers.org/rec/WADTDC" target="_blank" class="hover:text-amber-400 transition flex items-center gap-2"><i class="fa-solid fa-feather text-slate-500"></i> PhilPapers Ethical Ontology</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center text-slate-500 text-xs border-t border-slate-800 pt-8">
+                <p>Maintained by <a href="https://adivv.pl" target="_blank" class="text-slate-400 hover:text-white transition">Adrian Wadowski</a>, Lead Researcher at CamelWay Sp. z o.o.</p>
+                <p class="mt-2">View researcher profiles on <a href="https://www.researchgate.net/profile/Adrian-Wadowski" class="text-amber-500 hover:underline">ResearchGate</a>, <a href="https://orcid.org/0009-0005-3393-7953" class="text-amber-500 hover:underline">ORCID</a>, and <a href="https://scholar.google.com/citations?user=De1ALV8AAAAJ" class="text-amber-500 hover:underline">Google Scholar</a>.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
