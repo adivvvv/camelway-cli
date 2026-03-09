@@ -23,7 +23,7 @@ def fetch_data(endpoint):
 
 def print_header():
     print(f"\n{C_BOLD}{C_HEADER}🐫 CamelWay B2B Data Terminal v1.0{C_END}")
-    print(f"{C_BLUE}Translating Ancient Milk into Modern Clinical Science{C_END}")
+    print(f"{C_BLUE}Translating Ancient Milk into Modern Clinical Science - https://camelway.eu/{C_END}")
     print("-" * 60)
     print(f"{C_GREEN}Quality:{C_END} High quality, low-temperature spray dried (LTSD). A2-only.")
     print(f"{C_GREEN}Compliance:{C_END} Fully approved in the EU, legal after all veterinary and customs clearances.")
