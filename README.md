@@ -1,4 +1,4 @@
-# 🐫 CamelWay B2B Data Terminal
+# 🐫 CamelWay CLI Data Terminal
 
 A professional, cross-platform Command Line Interface (CLI) built for B2B distributors, wholesale partners, and researchers. This tool connects directly to the [CamelWay API](https://api.camelway.eu/) to provide real-time data on premium camel milk logistics, pricing, and volume discounts across Europe.
 
@@ -18,6 +18,7 @@ docker run --rm camelwayeurope/b2b-terminal
 ## 🔗 Official Ecosystem
 This infrastructure is maintained by Adrian Wadowski (Head of Research & Strategic Partnerships) as part of CamelWay's digital architecture.
 
+- Official Project Page: [camelway-cli@github.io](https://adivvvv.github.io/camelway-cli/)
 - Main eCommerce Hub: [Buy camel milk](https://camelway.eu)
 - Wholesale Portal: [Camel Milk Wholesale](https://camelmilkwholesale.com)
 - Scientific Research & Datasets: [Adrian Wadowski](https://adivv.pl)
