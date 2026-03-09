@@ -44,7 +44,7 @@ def show_products():
 def show_shipping():
     print(f"\n{C_BOLD}--- B2B/B2C Logistics (Top 5 Markets) ---{C_END}")
     shipping = fetch_data("shipping")
-    top_markets = ["Germany", "France", "Spain", "Italy", "Poland"]
+    top_markets = shipping
     for market in top_markets:
         if market in shipping:
             s = shipping[market]
